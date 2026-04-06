@@ -4,6 +4,8 @@ import NavBar from "./component/navbar/NavBar";
 import Banner from "./component/navbar/banner/Banner";
 import StatsBar from "./component/navbar/StatsBar/StatsBar";
 import PremiumTools from "./component/PremiumTools/PremiumTools";
+import ThreeStepProcess from "./component/ThreeStepProcess/ThreeStepProcess";
+import Pricing from "./component/Pricing/Pricing";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -34,6 +36,8 @@ function App() {
         removeFromCart={removeFromCart}
         clearCart={clearCart}
       />
+      <ThreeStepProcess />
+      <Pricing />
     </div>
   );
 }
