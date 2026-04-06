@@ -6,6 +6,7 @@ import StatsBar from "./component/navbar/StatsBar/StatsBar";
 import PremiumTools from "./component/PremiumTools/PremiumTools";
 import ThreeStepProcess from "./component/ThreeStepProcess/ThreeStepProcess";
 import Pricing from "./component/Pricing/Pricing";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -38,6 +39,7 @@ function App() {
       />
       <ThreeStepProcess />
       <Pricing />
+      <Footer />
     </div>
   );
 }

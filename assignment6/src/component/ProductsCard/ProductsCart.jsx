@@ -1,4 +1,5 @@
 import React from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 const ProductsCart = ({ cartItems, removeFromCart, clearCart }) => {
   const total = cartItems.reduce((sum, item) => sum + Number(item.price), 0);
@@ -6,7 +7,9 @@ const ProductsCart = ({ cartItems, removeFromCart, clearCart }) => {
   if (cartItems.length === 0) {
     return (
       <div className="w-full max-w-2xl mx-auto mt-10 text-center py-16">
-        <div className="text-6xl mb-4">🛒</div>
+        <div className="text-6xl mb-4 flex justify-center text-slate-300">
+          <FaShoppingCart />
+        </div>
         <p className="text-slate-400 text-lg font-medium">Your cart is empty.</p>
         <p className="text-slate-300 text-sm mt-1">Click "Buy Now" on a product to add it here.</p>
       </div>
