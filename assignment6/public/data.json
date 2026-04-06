@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "/products/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "SEO Booster",
+    "description": "Rank higher on search engines with AI-powered keyword research and content optimization.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword research tool",
+      "On-page SEO analysis",
+      "Competitor insights"
+    ],
+    "icon": "/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Kit",
+    "description": "Create scroll-stopping social posts, captions, and ad copy for every platform.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Platform-specific templates",
+      "Hashtag generator",
+      "Bulk scheduling copy"
+    ],
+    "icon": "/products/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Email Campaign Pro",
+    "description": "Design high-converting email sequences and newsletters with AI-driven personalization.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Email sequence builder",
+      "A/B test subject lines",
+      "Spam score checker"
+    ],
+    "icon": "/products/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Lifetime Creator Pack",
+    "description": "Get unlimited access to all writing tools forever — no recurring fees, no limits.",
+    "price": 299,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "All Pro features included",
+      "Lifetime updates",
+      "Priority support"
+    ],
+    "icon": "/products/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Team Plan",
+    "description": "Collaborate with your entire team on content projects with shared workspaces and analytics.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Up to 10 team members",
+      "Shared content library",
+      "Usage analytics dashboard"
+    ],
+    "icon": "/products/shopping-cart.png"
+  }
+]
