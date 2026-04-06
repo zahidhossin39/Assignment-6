@@ -36,7 +36,7 @@ const PremiumTools = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
         <button
           className={`py-3.5 px-10 rounded-full text-base font-medium cursor-pointer transition-all duration-300 ease-in-out border-none outline-none ${
             activeTab === "products"
-              ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-200"
+              ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg shadow-violet-200"
               : "bg-transparent text-slate-600 hover:text-violet-600"
           }`}
           onClick={() => setActiveTab("products")}
@@ -46,7 +46,7 @@ const PremiumTools = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
         <button
           className={`py-3.5 px-10 rounded-full text-base font-medium cursor-pointer transition-all duration-300 ease-in-out border-none outline-none flex items-center gap-2 ${
             activeTab === "cart"
-              ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-200"
+              ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg shadow-violet-200"
               : "bg-transparent text-slate-600 hover:text-violet-600"
           }`}
           onClick={() => setActiveTab("cart")}
@@ -56,8 +56,8 @@ const PremiumTools = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
             <span
               className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                 activeTab === "cart"
-                  ? "bg-white text-violet-600"
-                  : "bg-violet-100 text-violet-600"
+                  ? "bg-white text-[#4F39F6]"
+                  : "bg-violet-100 text-[#4F39F6]"
               }`}
             >
               {cartCount}

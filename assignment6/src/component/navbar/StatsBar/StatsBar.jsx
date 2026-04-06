@@ -8,7 +8,7 @@ const StatsBar = () => {
   ];
 
   return (
-    <div className="bg-[#8b5cf6] py-12 px-4">
+    <div className="bg-[#4F39F6] py-12 px-4 shadow-inner">
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-12 md:gap-0">
         {stats.map((stat, index) => (
           <React.Fragment key={stat.id}>

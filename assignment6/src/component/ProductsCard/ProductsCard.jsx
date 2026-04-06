@@ -58,7 +58,7 @@ const ProductsCard = ({ product, onBuyNow, isPurchased }) => {
             className="flex items-center gap-2.5 text-sm font-medium text-slate-700"
           >
             <svg
-              className="w-4 h-4 shrink-0 text-violet-600"
+              className="w-4 h-4 shrink-0 text-[#4F39F6]"
               viewBox="0 0 20 20"
               fill="none"
             >
@@ -93,12 +93,12 @@ const ProductsCard = ({ product, onBuyNow, isPurchased }) => {
               strokeLinejoin="round"
             />
           </svg>
-          Purchased
+          Added to cart
         </button>
       ) : (
         <button
           onClick={() => onBuyNow(product)}
-          className="w-full py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white text-sm font-semibold rounded-xl tracking-wide cursor-pointer transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-violet-300 active:translate-y-0 active:opacity-100"
+          className="w-full py-3.5 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white text-sm font-semibold rounded-xl tracking-wide cursor-pointer transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-200 active:translate-y-0 active:opacity-100"
         >
           Buy Now
         </button>

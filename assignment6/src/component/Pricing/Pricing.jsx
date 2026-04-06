@@ -93,7 +93,7 @@ const Pricing = () => {
                                 <li key={feature} className="flex items-center gap-2 text-sm">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className={`w-4 h-4 shrink-0 ${plan.popular ? 'text-white' : 'text-[#7C3AED]'}`}
+                                        className={`w-4 h-4 shrink-0 ${plan.popular ? 'text-white' : 'text-[#4F39F6]'}`}
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -109,10 +109,10 @@ const Pricing = () => {
                         </ul>
 
                         <button
-                            className={`mt-auto w-full py-3 rounded-full font-semibold text-sm cursor-pointer transition-opacity duration-200 hover:opacity-90 ${
+                            className={`mt-auto w-full py-3 rounded-full font-semibold text-sm cursor-pointer transition-all duration-200 hover:opacity-90 hover:shadow-lg ${
                                 plan.popular
-                                    ? 'bg-white text-[#7C3AED]'
-                                    : 'bg-[#7C3AED] text-white'
+                                    ? 'bg-white text-[#4F39F6]'
+                                    : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'
                             }`}
                         >
                             {plan.buttonText}

@@ -66,7 +66,7 @@ const ProductsCart = ({ cartItems, removeFromCart, clearCart }) => {
 
           <button
             onClick={clearCart}
-            className="w-full py-3.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white text-sm font-semibold rounded-xl tracking-wide cursor-pointer transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-violet-300 active:opacity-100"
+            className="w-full py-3.5 bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white text-sm font-semibold rounded-xl tracking-wide cursor-pointer transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-blue-200 active:opacity-100"
           >
             Proceed To Checkout
           </button>
