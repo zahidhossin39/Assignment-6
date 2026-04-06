@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProductsCard from "../ProductsCard/ProductsCard";
+import ProductsCart from "../ProductsCard/ProductsCart";
 
-const PremiumTools = () => {
+const PremiumTools = ({ cartItems, addToCart, removeFromCart, clearCart }) => {
   const [activeTab, setActiveTab] = useState("products");
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -18,6 +19,8 @@ const PremiumTools = () => {
         setIsLoading(false);
       });
   }, []);
+
+  const cartCount = cartItems.length;
 
   return (
     <section className="py-24 px-5 bg-white flex flex-col items-center text-center">
@@ -41,14 +44,25 @@ const PremiumTools = () => {
           Products
         </button>
         <button
-          className={`py-3.5 px-10 rounded-full text-base font-medium cursor-pointer transition-all duration-300 ease-in-out border-none outline-none ${
+          className={`py-3.5 px-10 rounded-full text-base font-medium cursor-pointer transition-all duration-300 ease-in-out border-none outline-none flex items-center gap-2 ${
             activeTab === "cart"
               ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-200"
               : "bg-transparent text-slate-600 hover:text-violet-600"
           }`}
           onClick={() => setActiveTab("cart")}
         >
-          Cart (0)
+          Cart
+          {cartCount > 0 && (
+            <span
+              className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                activeTab === "cart"
+                  ? "bg-white text-violet-600"
+                  : "bg-violet-100 text-violet-600"
+              }`}
+            >
+              {cartCount}
+            </span>
+          )}
         </button>
       </div>
 
@@ -60,13 +74,22 @@ const PremiumTools = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
             {products.map((product) => (
-              <ProductsCard key={product.id} product={product} />
+              <ProductsCard
+                key={product.id}
+                product={product}
+                isPurchased={cartItems.some((item) => item.id === product.id)}
+                onBuyNow={addToCart}
+              />
             ))}
           </div>
         ))}
 
       {activeTab === "cart" && (
-        <div className="text-slate-400 text-lg mt-10">Your cart is empty.</div>
+        <ProductsCart
+          cartItems={cartItems}
+          removeFromCart={removeFromCart}
+          clearCart={clearCart}
+        />
       )}
     </section>
   );
